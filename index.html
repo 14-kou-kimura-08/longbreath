@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LongBreathTimer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="top_wrapper">
+      <h1 id="top_messeage">Let's Long Breath</h1>
+      <a class="raised" >始める</a>
+      <p><a id="modal-open" class="button-link">※はじめての方はこちら</a></p>
+    </div>
+      <!-- ここからモーダルウィンドウ -->
+      <div id="modal-content">
+        <!-- モーダルウィンドウのコンテンツ開始 -->
+        <h3>ロングブレスとは</h3>
+        <p>強く長い呼吸をすることによって効果的に筋肉量を増やし、基礎代謝をアップさせることで内臓脂肪を減らして、リバウンドしにくい美しい身体をつくるメソッドです。</p>
+        <p>1回の呼吸で3秒吸って、7秒強く吐きます。<br>1セット6回の呼吸を、3セット繰り返します。</p>
+        <p><a id="modal-close" class="button-link">閉じる</a></p>
+        <!-- モーダルウィンドウのコンテンツ終了 -->
+      </div>
+      <!-- ここまでモーダルウィンドウ -->
+
+
+
+    <div class="counter">
+      <div id="circle"></div>
+      <p id="comment"></p> <div id="count"></div>
+    　<p id="timer">00.000</p>
+      <div class="controls">
+      <a id="start">START</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="top.js"></script>
+  </body>
+</html>

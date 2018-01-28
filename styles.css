@@ -1,0 +1,180 @@
+html , body{
+height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+
+#circle {
+    background: #FB8403;
+    position: absolute;
+    margin: -200px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.breathe {
+  transition-duration:3s;
+  transition-timing-function:ease-in-out;
+}
+
+.exhale{
+  transition-duration:7s;
+  transition-timing-function:cubic-bezier(0.4, 0.7, 0.5, 1.0);
+}
+
+#timer {
+   position: absolute;
+   margin: -100px 0 0 -100px;
+   top: 50%;
+   left: 50%;
+   height: 200px;
+   width: 200px;
+   line-height: 220px;
+   text-align: center;
+   font-size: 3em;
+   font-weight: bold;
+}
+
+#comment {
+   position: absolute;
+   margin: -100px 0 0 -100px;
+   top: 50%;
+   left: 50%;
+   height: 200px;
+   width: 200px;
+   line-height: 90px;
+   text-align: center;
+   font-size: 2em;
+}
+
+#count {
+   position: absolute;
+   margin: -25px 0 0 -400px;
+   top: 7%;
+   left: 50%;
+   height: 50px;
+   width: 800px;
+   text-align: center;
+   line-height: 150px;
+   font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+#modal-content{
+  width: 50% ;
+	margin: 0 ;
+	padding: 10px 20px ;
+	border: 2px solid #aaa ;
+	background: #ff8500 ;
+	position: fixed ;
+	display: none ;
+	z-index: 2 ;
+  color: #fff;
+}
+
+.modal>p{
+	margin-top:1em;
+}
+
+.modal>p:first-child{
+	margin-top:0;
+}
+
+.button-link{
+	color:#00f;
+}
+
+.button-link:hover{
+	cursor:pointer;
+	color:#f00;
+}
+
+#modal-overlay{
+  z-index: 1 ;
+	display: none ;
+	position: fixed ;
+	top: 0 ;
+	left: 0 ;
+	width: 100% ;
+	height: 120% ;
+	background-color: rgba( 0,0,0, 0.75 ) ;
+}
+
+.counter{
+  display: none;
+}
+
+.raised{
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #ff8500;/*背景色*/
+  color: #FFF;/*文字色*/
+  font-size: 1em;/*文字サイズ*/
+  text-decoration: none;
+  letter-spacing: 0.05em;/*字間*/
+  padding: 0.2em 1em;/*ボタン内の余白*/
+  border-radius: 3px;/*角の丸み*/
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+.raised:hover{
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+}
+
+#top_messeage {
+  font-size: 40px;
+}
+
+.top_wrapper {
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  margin: -150px 0 0 -250px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+}
+
+#start {
+  display: inline-block;
+  position: absolute;
+  margin: 40px 0 0 -50px;
+  top: 50%;
+  left: 50%;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ffF;
+  color: #ff8500;/*文字色*/
+  font-size: 1em;/*文字サイズ*/
+  text-decoration: none;
+  letter-spacing: 0.05em;/*字間*/
+  border-radius: 3px;/*角の丸み*/
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+  -webkit-tap-highlight-color: transparent;
+}
